@@ -43,7 +43,7 @@ image:
 ## User of the application
 ## ref: https://github.com/bitnami/bitnami-docker-opencart#configuration
 ##
-
+env: prod
 namespace: opencart
 fqdn: opencart.01cloud.io   # use  "xyz.test.01cloud.dev" for dev environment
 zone: 01cloud.io.    # use "test.01cloud.dev."  for dev environment
@@ -238,6 +238,9 @@ persistence:
 ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
 ##
 resources:
+  limits:
+    memory: 512Mi
+    cpu: 300m
   requests:
     memory: 512Mi
     cpu: 300m
