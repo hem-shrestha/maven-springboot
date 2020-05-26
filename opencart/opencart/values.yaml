@@ -96,6 +96,8 @@ externalDatabase:
 # smtpUser:
 # smtpPassword:
 # smtpProtocol:
+nodePool:
+  deployment: np-starter
 
 ##
 ## MariaDB chart configuration

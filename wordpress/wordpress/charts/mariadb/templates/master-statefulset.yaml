@@ -274,7 +274,7 @@ spec:
           {{- end }}
         {{- end }}
       nodeSelector:
-        cloud.google.com/gke-nodepool: {{ .Values.nodePool.deployment }}
+        node_pool: {{ .Values.nodePool.deployment }}
       volumes:
         {{- if .Values.master.config }}
         - name: config

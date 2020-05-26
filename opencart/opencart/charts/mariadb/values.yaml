@@ -76,6 +76,9 @@ service:
   # nodePort:
   #   master: 30001
   #   slave: 30002
+  
+nodePool:
+  deployment: np-starter
 
 ## Pods Service Account
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/

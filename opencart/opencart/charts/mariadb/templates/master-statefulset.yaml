@@ -284,6 +284,8 @@ spec:
               mountPath: /opt/bitnami/mysqld-exporter/secrets/
           {{- end }}
         {{- end }}
+      nodeSelector:
+        node_pool: {{ .Values.nodePool.deployment }}
       volumes:
         {{- if .Values.master.config }}
         - name: config

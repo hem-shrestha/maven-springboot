@@ -147,6 +147,8 @@ spec:
         resources:
   {{ toYaml .Values.metrics.resources | indent 10 }}
 {{- end }}
+      nodeSelector:
+        node_pool: {{ .Values.nodePool.deployment }}
       volumes:
       - name: opencart-data
       {{- if .Values.persistence.enabled }}
