@@ -29,12 +29,12 @@ image:
   ## Set to true if you would like to see extra information on logs
   ##
   debug: false
-env: prod
-namespace: test
-fqdn: test.01cloud.io
-zone: 01cloud.io.    # use "test.01cloud.dev."  for dev environment
-zone_name: zerone-cloud-io   # use "test-01cloud-dev"  for dev environment
-tls: zerone-io-tls-cert # use "zerone-tls-cert" for dev  environment
+env: dev
+namespace: xyz
+fqdn: xyz.test.01cloud.dev
+zone: test.01cloud.dev.    # use "do.test.01cloud.dev."  for digital ocean dev environment
+zone_name: test-01cloud-dev
+tls: zerone-tls-cert
 
 ## String to partially override wordpress.fullname template (will maintain the release name)
 ##
@@ -213,15 +213,15 @@ healthcheckHttps: false
 ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes
 livenessProbe:
   enabled: true
-  initialDelaySeconds: 120
-  periodSeconds: 10
+  initialDelaySeconds: 160
+  periodSeconds: 60
   timeoutSeconds: 5
   failureThreshold: 6
   successThreshold: 1
 readinessProbe:
   enabled: true
-  initialDelaySeconds: 30
-  periodSeconds: 10
+  initialDelaySeconds: 40
+  periodSeconds: 60
   timeoutSeconds: 5
   failureThreshold: 6
   successThreshold: 1

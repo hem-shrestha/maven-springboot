@@ -44,11 +44,11 @@ image:
 ## ref: https://github.com/bitnami/bitnami-docker-opencart#configuration
 ##
 env: prod
-namespace: opencart
-fqdn: opencart.01cloud.io   # use  "xyz.test.01cloud.dev" for dev environment
-zone: 01cloud.io.    # use "test.01cloud.dev."  for dev environment
-zone_name: zerone-cloud-io   # use "test-01cloud-dev"  for dev environment
-tls: zerone-io-tls-cert # use "zerone-tls-cert" for dev  environment
+namespace: xyz
+fqdn: xyz.test.01cloud.dev
+zone: test.01cloud.dev.    # use "do.test.01cloud.dev."  for digital ocean dev environment
+zone_name: test-01cloud-dev
+tls: zerone-tls-cert
 
 opencartUsername: user
 

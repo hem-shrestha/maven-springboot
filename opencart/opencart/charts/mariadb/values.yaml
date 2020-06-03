@@ -305,19 +305,19 @@ master:
     enabled: true
     ##
     ## Initializing the database could take some time
-    initialDelaySeconds: 120
+    initialDelaySeconds: 160
     ##
     ## Default Kubernetes values
-    periodSeconds: 10
+    periodSeconds: 60
     timeoutSeconds: 1
     successThreshold: 1
     failureThreshold: 3
   readinessProbe:
     enabled: true
-    initialDelaySeconds: 30
+    initialDelaySeconds: 40
     ##
     ## Default Kubernetes values
-    periodSeconds: 10
+    periodSeconds: 60
     timeoutSeconds: 1
     successThreshold: 1
     failureThreshold: 3
