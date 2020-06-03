@@ -1,0 +1,81 @@
+[{
+    "version": "3.0.3.3",
+    "tag": "3.0.3.3",
+    "released": "May 01, 2020"
+}, {
+    "version": "3.0.3.2",
+    "tag": "3.0.3.2",
+    "released": "Apr 09, 2019"
+}, {
+    "version": "3.0.3.1",
+    "tag": "3.0.3.1",
+    "released": "Jan 07, 2019"
+}, {
+    "version": "3.0.2.0",
+    "tag": "3.0.2.0",
+    "released": "July 18, 2018"
+}, {
+    "version": "3.0.1.2",
+    "tag": "3.0.1.2",
+    "released": "July 7, 2018"
+}, {
+    "version": "3.0.1.1",
+    "tag": "3.0.1.1",
+    "released": "July 4, 2018"
+}, {
+    "version": "3.0.0.0",
+    "tag": "3.0.0.0",
+    "released": "June 19, 2018"
+}, {
+    "version": "2.3.0.2",
+    "tag": "2.3.0.2",
+    "released": "August 1, 2016"
+}, {
+    "version": "2.2.0.0",
+    "tag": "2.2.0.0",
+    "released": "March 2, 2016"
+}, {
+    "version": "2.1.0.2",
+    "tag": "2.1.0.2",
+    "released": "January 12, 2016"
+}, {
+    "version": "2.1.0.1",
+    "tag": "2.1.0.1",
+    "released": "October 6, 2015"
+}, {
+    "version": "2.0.3.1",
+    "tag": "2.0.3.1",
+    "released": "May 29, 2015"
+}, {
+    "version": "2.0.2.0",
+    "tag": "2.0.2.0",
+    "released": "March 31, 2015"
+}, {
+    "version": "2.0.1.1",
+    "tag": "2.0.1.1",
+    "released": "December 6, 2014"
+}, {
+    "version": "2.0.1.0",
+    "tag": "2.0.1.0",
+    "released": "November 30, 2014"
+}, {
+    "version": "2.0.0.0",
+    "tag": "2.0.0.0",
+    "released": "October 1, 2014"
+}, {
+    "version": "1.5.6.4",
+    "tag": "1.5.6.4",
+    "released": "April 23, 2014"
+}, {
+    "version": "1.5.6.3",
+    "tag": "1.5.6.3",
+    "released": "April 15, 2014"
+}, {
+    "version": "1.5.6.2",
+    "tag": "1.5.6.2",
+    "released": "April 10, 2014"
+}, {
+    "version": "1.5.6.1",
+    "tag": "1.5.6.1",
+    "released": "January 7, 2014"
+}]
