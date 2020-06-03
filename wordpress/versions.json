@@ -6,87 +6,57 @@
     },
     {
         "version": "5.3",
-        "tag": "5.3.3",
+        "tag": "5.3.2",
         "released": "November 12, 2019"
     },
     {
         "version": "5.2",
-        "tag": "5.2.6",
+        "tag": "5.2.4",
         "released": "May 7, 2019"
     },
     {
         "version": "5.1",
-        "tag": "5.1.5",
+        "tag": "5.1.1",
         "released": "February 21, 2019"
     },
     {
         "version": "5.0",
-        "tag": "5.0.9",
+        "tag": "5.0.3",
         "released": "December 6, 2018"
     },
     {
         "version": "4.9",
-        "tag": "4.9.14",
+        "tag": "4.9.8",
         "released": "November 16, 2017"
     },
     {
         "version": "4.8",
-        "tag": "4.8.13",
+        "tag": "4.8.3-r0",
         "released": "June 8, 2017"
     },
     {
         "version": "4.7",
-        "tag": "4.7.17",
+        "tag": "4.7.5-r5",
         "released": "December 6, 2016"
     },
     {
         "version": "4.6",
-        "tag": "4.6.18",
+        "tag": "4.6.1-r7",
         "released": "August 16, 2016"
     },
     {
         "version": "4.5",
-        "tag": "4.5.21",
+        "tag": "4.5.3-r0",
         "released": "April 12, 2016"
     },
     {
         "version": "4.4",
-        "tag": "4.4.22",
+        "tag": "4.4.2-3",
         "released": "December 8, 2015"
     },
     {
         "version": "4.3",
-        "tag": "4.3.23",
+        "tag": "4.3.1-1",
         "released": "August 18, 2015"
-    },
-    {
-        "version": "4.2",
-        "tag": "4.2.27",
-        "released": "April 23, 2015"
-    },
-    {
-        "version": "4.1",
-        "tag": "4.1.30",
-        "released": "December 18, 2014"
-    },
-    {
-        "version": "4.0",
-        "tag": "4.0.30",
-        "released": "September 4, 2014"
-    },
-    {
-        "version": "3.9",
-        "tag": "3.9.31",
-        "released": "April 16, 2014"
-    },
-    {
-        "version": "3.8",
-        "tag": "3.8.33",
-        "released": "December 12, 2013"
-    },
-    {
-        "version": "3.7",
-        "tag": "3.7.33",
-        "released": "October 24, 2013"
     }
 ]
