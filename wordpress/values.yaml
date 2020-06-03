@@ -172,13 +172,8 @@ extraVolumes: []
 ##
 resources:
   limits: 
-<<<<<<< HEAD
     memory: 512Mi
     cpu: 300m
-=======
-    memory: 256Mi
-    cpu: 200m
->>>>>>> b0312d729293fca74966afed5f3486d0100526fc
   requests:
     memory: 64Mi
     cpu: 50m
