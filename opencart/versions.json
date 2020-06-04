@@ -1,0 +1,27 @@
+[
+    {
+        "version": "3.0.3",
+        "tag": "3.0.3-3",
+        "released": "Jan 07, 2019"
+    },
+    {
+        "version": "3.0.2",
+        "tag": "3.0.2-0",
+        "released": "July 18, 2018"
+    },
+    {
+        "version": "3.0.1",
+        "tag": "3.0.1-2-r0",
+        "released": "July 4, 2018"
+    },
+    {
+        "version": "3.0.0",
+        "tag": "3.0.0-2-r1",
+        "released": "June 19, 2018"
+    },
+    {
+        "version": "2.3.0",
+        "tag": "2.3.0-2-r0",
+        "released": "August 1, 2016"
+    }
+]
