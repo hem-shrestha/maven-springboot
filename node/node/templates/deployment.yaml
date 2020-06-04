@@ -22,3 +22,6 @@ spec:
         {{- include "helpers.list-env-variables" . | indent 10 }}
         ports:
         - containerPort: {{ .Values.service.TargetPort }}
+        {{- if .Values.resources }}
+        resources: {{- toYaml .Values.resources | nindent 10 }}
+        {{- end }}

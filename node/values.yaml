@@ -40,6 +40,7 @@ image:
 
 secretname: app-env-secret
 
+env: prod
 namespace: node
 fqdn: node.test.01cloud.dev
 zone: do.test.01cloud.dev. 
@@ -51,11 +52,11 @@ service:
   port: 80
   TargetPort: 8080
 
-env:
-  normal: #nonsensitive env variables in normal section
+dynamicenv:
+  normal: {} #nonsensitive env variables in normal section
   # port: 8080
 
-  secret: #sensitive env variables in secret section
+  secret: {}#sensitive env variables in secret section
   # db_user: "demo"
   # db_pass: "demo"
 
@@ -88,7 +89,7 @@ revision: master
 
 ## Specify the number of replicas for the application
 ##
-replicas: 1
+replicaCount: 1
 
 ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
 ##
@@ -116,12 +117,12 @@ resources:
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  limits: {}
-  #   cpu: 100m
-  #   memory: 128Mi
-  requests: {}
-  #   cpu: 100m
-  #   memory: 128Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
 
 ## Enable persistence using Persistent Volume Claims
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
