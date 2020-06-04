@@ -1,0 +1,42 @@
+[
+    {
+        "version": "14.x",
+        "tag": "14-prod",
+        "released": "April 21, 2020"
+    },
+    {
+        "version": "13.x",
+        "tag": "13-prod",
+        "released": "October 23, 2019"
+    },
+    {
+        "version": "12.x",
+        "tag": "12-prod",
+        "released": "April 23, 2019"
+    },
+    {
+        "version": "10.x",
+        "tag": "10-prod",
+        "released": "April 24, 2018"
+    },
+    {
+        "version": "8.x",
+        "tag": "8-prod",
+        "released": "May 30, 2017"
+    },
+    {
+        "version": "6.x",
+        "tag": "6-prod",
+        "released": "April 27, 2016"
+    },
+    {
+        "version": "4.x",
+        "tag": "4-prod",
+        "released": "September 8, 2015"
+    },
+    {
+        "version": "0.12.x",
+        "tag": "0.12.6-1",
+        "released": "February 6, 2014"
+    }
+]
