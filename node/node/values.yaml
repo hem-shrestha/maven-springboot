@@ -24,7 +24,7 @@ image:
   ## Secrets must be manually created in the namespace.
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
   ##
-  # pullSecrets:
+  pullSecrets:
   #   - myRegistryKeySecretName
 
 ## String to partially override node.fullname template (will maintain the release name)
@@ -35,8 +35,10 @@ image:
 ## String to fully override node.fullname template
 ##
 # fullnameOverride:
+#
+#Cluster: DigitalOcean #GKE if deploying in google clouster
 
-
+ImagePullsecret: do-registry
 
 secretname: app-env-secret
 
