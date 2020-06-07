@@ -350,7 +350,7 @@ persistence:
   ## the existingClaim variable
   # existingClaim: your-claim
   accessMode: ReadWriteOnce
-  size: 100Mi
+  size: 1Gi
 
 ##
 ## MariaDB chart configuration
@@ -396,7 +396,7 @@ mariadb:
       # storageClass: "-"
       accessModes:
         - ReadWriteOnce
-      size: 100Mi
+      size: 1Gi
 
 ##
 ## External Database Configuration
@@ -451,7 +451,9 @@ metrics:
     limits: 
       memory: 256Mi
       cpu: 200m
-    requests: {}
+    requests:
+      memory: 64Mi
+      cpu: 50m
 
   ## Prometheus Service Monitor
   ## ref: https://github.com/coreos/prometheus-operator
