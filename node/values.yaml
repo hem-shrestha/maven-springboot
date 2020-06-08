@@ -52,7 +52,7 @@ tls: zerone-tls-cert
 service:
   type: ClusterIP
   port: 80
-  TargetPort: 8080
+  TargetPort: 3000
 
 dynamicenv:
   normal: {} #nonsensitive env variables in normal section
