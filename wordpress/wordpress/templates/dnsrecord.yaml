@@ -1,0 +1,12 @@
+{{- if eq .Values.env "zerone-stable" }}
+apiVersion: dns.01cloud.io/v1
+{{- end }}
+{{- if eq .Values.env "zerone" }}
+apiVersion: dns.test.01cloud.dev/v1
+{{- end }}
+kind: DNSRecord
+metadata:
+  name: {{ .Values.namespace }}
+spec:
+  size: 1
+

@@ -34,6 +34,6 @@ spec:
         - |
           mysql --host=$MARIADB_HOST --port=$MARIADB_PORT --user=$WORDPRESS_DATABASE_USER --password=$WORDPRESS_DATABASE_PASSWORD
   nodeSelector:
-    cloud.google.com/gke-nodepool: {{ .Values.nodePool.deployment }}
+    node_pool: {{ .Values.nodePool.deployment }}
   restartPolicy: Never
 {{- end }}

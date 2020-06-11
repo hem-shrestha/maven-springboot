@@ -36,6 +36,22 @@ zone: test.01cloud.dev.    # use "do.test.01cloud.dev."  for digital ocean dev e
 zone_name: test-01cloud-dev   
 tls: zerone-tls-cert 
 
+clients_fqdn: ""
+
+HealthCheck:
+  path: /healthy
+  intervalSeconds: 5
+  timeoutSeconds: 2
+  unhealthyThresholdCount: 3
+  healthyThresholdCount: 5
+
+TimeOutPolicy:
+  request: 1s
+
+RetryPolicy:
+  count: 3
+  perTryTimeout: 150ms
+
 ## String to partially override wordpress.fullname template (will maintain the release name)
 ##
 # nameOverride:

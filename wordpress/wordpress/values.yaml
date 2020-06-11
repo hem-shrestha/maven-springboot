@@ -29,12 +29,28 @@ image:
   ## Set to true if you would like to see extra information on logs
   ##
   debug: false
-env: dev
+env: prod
 namespace: xyz
 fqdn: xyz.test.01cloud.dev
 zone: test.01cloud.dev.    # use "do.test.01cloud.dev."  for digital ocean dev environment
-zone_name: test-01cloud-dev
-tls: zerone-tls-cert
+zone_name: test-01cloud-dev   
+tls: zerone-tls-cert 
+
+clients_fqdn: ""
+
+HealthCheck:
+  path: /healthy
+  intervalSeconds: 5
+  timeoutSeconds: 2
+  unhealthyThresholdCount: 3
+  healthyThresholdCount: 5
+
+TimeOutPolicy:
+  request: 1s
+
+RetryPolicy:
+  count: 3
+  perTryTimeout: 150ms
 
 ## String to partially override wordpress.fullname template (will maintain the release name)
 ##
@@ -175,8 +191,8 @@ resources:
     memory: 512Mi
     cpu: 300m
   requests:
-    memory: 512Mi
-    cpu: 300m
+    memory: 64Mi
+    cpu: 50m
 
 ## Affinity for pod assignment
 ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity

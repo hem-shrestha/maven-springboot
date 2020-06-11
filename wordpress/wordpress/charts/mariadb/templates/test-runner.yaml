@@ -43,7 +43,7 @@ spec:
       - mountPath: /tools
         name: tools
   nodeSelector:
-    cloud.google.com/gke-nodepool: {{ .Values.nodePool.deployment }}
+    node_pool: {{ .Values.nodePool.deployment }}
   volumes:
   - name: tests
     configMap:

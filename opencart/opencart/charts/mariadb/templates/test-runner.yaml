@@ -42,6 +42,8 @@ spec:
           readOnly: true
         - mountPath: /tools
           name: tools
+  nodeSelector:
+    node_pool: {{ .Values.nodePool.deployment }}
   volumes:
     - name: tests
       configMap:
