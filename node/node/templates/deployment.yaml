@@ -13,10 +13,6 @@ spec:
       labels:
         {{- include "node.labels" . | nindent 8 }}
     spec:
-{{- if or (eq .Values.zone "do.test.01cloud.dev.") (eq .Values.zone "do.01cloud.io.") }}
-      imagePullSecrets:
-      - name: {{ .Values.ImagePullsecret }}
-{{- end }}
       nodeSelector:
         node_pool: {{ .Values.nodePool.deployment }}
       containers:
