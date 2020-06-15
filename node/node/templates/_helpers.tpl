@@ -251,14 +251,14 @@ Usage:
 
 
 {{- define "helpers.list-env-variables"}}
-{{- range $key, $val := .Values.dynamicenv.secret }}
+{{- range $key, $val := .Values.dynamicEnv.secret }}
 - name: {{ $key }}
   valueFrom:
     secretKeyRef:
       name: app-env-secret
       key: {{ $key }}
 {{- end}}
-{{- range $key, $val := .Values.dynamicenv.normal }}
+{{- range $key, $val := .Values.dynamicEnv.normal }}
 - name: {{ $key }}
   value: {{ $val | quote }}
 {{- end}}

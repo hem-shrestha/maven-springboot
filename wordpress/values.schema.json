@@ -39,6 +39,13 @@
       "value": "Blog Name",
       "form": true
     },
+    "clients_fqdn": {
+      "type": "string",
+      "title": "Custom Domain",
+      "value": "",
+      "form": true,
+      "description": "You can provide your custom subdomain name here"
+    },
     "mariadb": {
       "type": "object",
       "title": "MariaDB Details",

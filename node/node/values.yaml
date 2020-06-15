@@ -49,18 +49,36 @@ zone: do.test.01cloud.dev.
 zone_name: test-01cloud-dev 
 tls: zerone-tls-cert
 
+clients_fqdn: ""
+
+HealthCheck:
+  path: /healthy
+  intervalSeconds: 5
+  timeoutSeconds: 2
+  unhealthyThresholdCount: 3
+  healthyThresholdCount: 5
+
+TimeOutPolicy:
+  request: 1s
+
+RetryPolicy:
+  count: 3
+  perTryTimeout: 150ms
+
 service:
   type: ClusterIP
   port: 80
-  TargetPort: 8080
+  TargetPort: 3000
 
-dynamicenv:
-  normal: {} #nonsensitive env variables in normal section
+dynamicEnv:
+  normal: #nonsensitive env variables in normal section
   # port: 8080
+    clients_fqdn: ""
 
-  secret: {}#sensitive env variables in secret section
+  secret: {} #sensitive env variables in secret section
   # db_user: "demo"
   # db_pass: "demo"
+
 
 nodePool:
   deployment: np-starter
