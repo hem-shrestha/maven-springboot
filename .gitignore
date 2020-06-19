@@ -1,6 +1,6 @@
 inode_modules
 npm-debug.log
-Dockerfile*
+#Dockerfile*
 docker-compose*
 .dockerignore
 README.md

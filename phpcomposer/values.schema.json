@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+      "clients_fqdn": {
+      "type": "string",
+      "title": "Custom Domain",
+      "value": "",
+      "form": true,
+      "description": "You can provide your custom subdomain name here"
+    }
+  }
+}
