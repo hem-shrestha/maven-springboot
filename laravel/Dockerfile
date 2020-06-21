@@ -4,8 +4,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /var/www/html
 
-COPY composer.json .
-
 COPY --chown=www-data:www-data . .
 
 RUN composer install
