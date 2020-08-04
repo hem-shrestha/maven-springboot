@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+     {{- include "node.labels" . | nindent 4 }}
+  name: {{ template "node.fullname" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels: {{- include "node.matchLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "node.labels" . | nindent 8 }}
+    spec:
+      nodeSelector:
+        node_pool: {{ .Values.nodePool.deployment }}
+      containers:
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        name: {{ .Chart.Name }}
+        env:
+        {{- include "helpers.list-env-variables" . | indent 10 }}
+        ports:
+        - containerPort: {{ .Values.service.TargetPort }}
+        {{- if .Values.resources }}
+        resources: {{- toYaml .Values.resources | nindent 10 }}
+        {{- end }}

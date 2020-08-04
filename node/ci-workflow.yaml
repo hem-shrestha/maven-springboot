@@ -1,0 +1,34 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: "default"
+spec:
+  entrypoint: dind-template
+  templates:
+    - name: dind-template
+      inputs:
+        artifacts:
+          - name: argo-source
+            path: "/src"
+            git:
+              repo: ""
+              revision: ""
+      container:
+        image: docker:17.10
+        command:
+          - "sh"
+          - "-c"
+        args:
+          - until docker ps; do sleep 3; echo "%s" > Dockerfile; done && docker build -t
+            %s:%s . && docker login -u %s -p '%v' https://%s && docker push %s:%s
+        env:
+          - name: DOCKER_HOST
+            value: 127.0.0.1
+        workingDir: "/src"
+      sidecars:
+        - name: dind
+          image: docker:18.09.4-dind
+          securityContext:
+            privileged: true
+          mirrorVolumeMounts: true

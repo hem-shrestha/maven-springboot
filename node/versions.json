@@ -1,0 +1,50 @@
+[
+    {
+        "name": "14.x",
+        "repo": "bitnami/node",
+        "tag": "14-prod",
+        "released": "April 21, 2020"
+    },
+    {
+        "name": "13.x",
+        "repo": "bitnami/node",
+        "tag": "13-prod",
+        "released": "October 23, 2019"
+    },
+    {
+        "name": "12.x",
+        "repo": "bitnami/node",
+        "tag": "12-prod",
+        "released": "April 23, 2019"
+    },
+    {
+        "name": "10.x",
+        "repo": "bitnami/node",
+        "tag": "10-prod",
+        "released": "April 24, 2018"
+    },
+    {
+        "name": "8.x",
+        "repo": "bitnami/node",
+        "tag": "8-prod",
+        "released": "May 30, 2017"
+    },
+    {
+        "name": "6.x",
+        "repo": "bitnami/node",
+        "tag": "6-prod",
+        "released": "April 27, 2016"
+    },
+    {
+        "name": "4.x",
+        "repo": "bitnami/node",
+        "tag": "4-prod",
+        "released": "September 8, 2015"
+    },
+    {
+        "name": "0.12.x",
+        "repo": "bitnami/node",
+        "tag": "0.12.6-1",
+        "released": "February 6, 2014"
+    }
+]
